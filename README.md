@@ -21,7 +21,7 @@ To start the docker image run:
 docker run -d \
  --name "Handbrake-Docker" \
  --runtime=nvidia \
- -p 2200:22 \
+ -p <port>:22 \
  -v <insert/path/here>:/home/linux/Handbrake-Video/ \
 zocker160/handbrake-nvenc:latest
 ```
