@@ -39,8 +39,11 @@ zocker160/handbrake-nvenc:latest
 You need to have the x2go client installed in order to connect to the server with following settings:
 
 **Host:** `<your_server_ip>`
+
 **Login:** `linux`
+
 **SSH-Port:** `<any_port_specified_above>`
+
 **session-type / desktop env:** `XFCE` **OR** `application`:`ghb`
 
 **the password is:** `debian`
