@@ -11,5 +11,9 @@ RUN apt-get install -y handbrake-gtk
 # add handbrake to desktop
 ADD Handbrake.desktop /home/linux/Desktop/
 RUN chmod +x /home/linux/Desktop/Handbrake.desktop
+RUN chown linux:linux /home/linux/Desktop/Handbrake.desktop
+
+WORKDIR /videos
+VOLUME /videos
 
 ENTRYPOINT /usr/sbin/sshd -D
