@@ -22,7 +22,7 @@ docker run -d \
  --name "Handbrake-Docker" \
  --runtime=nvidia \
  -p <port>:22 \
- -v <insert/path/here>:/home/linux/Handbrake-Video/ \
+ -v <path>:/home/linux/Handbrake-Video/ \
 zocker160/handbrake-nvenc:latest
 ```
 
@@ -31,7 +31,7 @@ zocker160/handbrake-nvenc:latest
 - `--name` here you can set the name of the docker image
 - `--runtime=nvidia` this enables the passthrough to the GPU(s)
 - `-p <port>:22` x2go uses SSH in order to connect to the server, so feel free to remap it to any port you want
-- `-v <insert/path/here>:/home/linux/Handbrake-Video/` map this to any folder on your computer containing the videos you want to convert *(you can map more than this folder into the `/home/linux` path)*
+- `-v <path>:/home/linux/Handbrake-Video/` map this to any folder on your computer containing the videos you want to convert *(you can map more than this folder into the `/home/linux` path)*
 
 
 ## Connect to the Container
@@ -40,10 +40,9 @@ You need to have the x2go client installed in order to connect to the server wit
 
 **Host:** `<your_server_ip>`
 
-**Login:** `linux`
+**username:** `linux`
+**password:** `debian`
 
-**SSH-Port:** `<any_port_specified_above>`
+**SSH-Port:** `<port_specified_above>`
 
 **session-type / desktop env:** `XFCE` **OR** `application`:`ghb`
-
-**the password is:** `debian`
