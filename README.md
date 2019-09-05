@@ -40,7 +40,7 @@ You need to have the x2go client installed in order to connect to the server wit
 
 **Host:** `<your_server_ip>`
 
-**username:** `linux`
+**username/login:** `linux`
 **password:** `debian`
 
 **SSH-Port:** `<port_specified_above>`
