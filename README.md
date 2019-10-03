@@ -23,7 +23,7 @@ docker run -d \
  --runtime=nvidia \
  -p <port>:22 \
  -v <path>:/home/linux/Handbrake-Video/ \
-zocker160/handbrake-nvenc:latest
+zocker160/handbrake-nvenc-x2go:latest
 ```
 
 #### Usage
